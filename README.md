@@ -11,7 +11,7 @@ npm i
 2. Start Project
 
 ```
-npm dev
+npm run dev
 ```
 
 3. Happy Coding Your Program
