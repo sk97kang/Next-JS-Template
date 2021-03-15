@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import Head from "next/head";
-import { APP_NAME } from "common/constants";
+import { APP_NAME } from "@common/constants";
 
 interface ILayoutProps {
   title: string;

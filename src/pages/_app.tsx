@@ -1,14 +1,12 @@
 import type { AppProps /*, AppContext */ } from "next/app";
 import Head from "next/head";
-import { APP_NAME } from "common/constants";
 import { Global } from "@emotion/react";
-import { globalStyle } from "styles/globalStyle";
-import { ApolloProvider } from "@apollo/client";
-import { client } from "common/apollo";
+import { APP_NAME } from "@common/constants";
+import { globalStyle } from "@styles/globalStyle";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ApolloProvider client={client}>
+    <>
       <Head>
         <title>{APP_NAME}</title>
         <meta charSet="utf-8" />
@@ -35,7 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <Global styles={globalStyle} />
       <Component {...pageProps} />
-    </ApolloProvider>
+    </>
   );
 }
 

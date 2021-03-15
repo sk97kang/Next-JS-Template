@@ -1,13 +1,7 @@
-import { useReactiveVar } from "@apollo/client";
-
-import { isLoggedInVar } from "common/apollo";
-
-import { Home } from "containers/main/home";
-import { Login } from "containers/auth/login";
+import { HomeTemplate } from "@templates/main/Home";
 
 function IndexPage() {
-  const isLoggedIn = useReactiveVar(isLoggedInVar);
-  return isLoggedIn ? <Home /> : <Login />;
+  return <HomeTemplate />;
 }
 
 export default IndexPage;
