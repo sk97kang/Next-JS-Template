@@ -1,7 +1,5 @@
-import { HomeTemplate } from "@templates/main/Home";
-
 function IndexPage() {
-  return <HomeTemplate />;
+  return <div />;
 }
 
 export default IndexPage;
